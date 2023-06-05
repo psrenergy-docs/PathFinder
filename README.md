@@ -1,2 +1,2 @@
-# PSR docs template
-Template documentation repository for PSR
+# PathFinder Docs
+Documentation repository for PathFinder model and interface
