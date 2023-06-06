@@ -14,5 +14,5 @@ There will also be a CSV file compiling information of every candidate route res
 * **Enhanced route length (km) [`Float`]:** The enhanced route length. Will be the same as the basic if no enhancement is applied.
 
 If the Tower Arrangement module is used, there will be two additional columns:
-* **Tower arrangement (km) [`ineteger`]:** The choosen tower arrangement code.
+* **Tower arrangement (km) [`integer`]:** The choosen tower arrangement code.
 * **Total cost (M$) [`Float`]:** The total cost of implementating the line for the choosen arrangement.
