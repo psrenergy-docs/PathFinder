@@ -48,7 +48,9 @@ Candidate data holds data related to transmission line candidate definition, whi
 
 | Subtab | Collection | Description| Relates to |
 |--------|------------|------------|------------|
-| Candidate | Candidate collection | Defines transmission line candidates for the study | for candidate origin-destination routes | Candidate collection |
+| Candidate | Candidate collection | Defines transmission line candidates for the study | - |
+| Spatial constraint | Spatial constraint collection | Defines candidate constraints for the study | Candidate collection | Candidate collection |
+| Map | Map collection | Defines map elements for a candidate | Candidate collection |
 
 #### Electrical data
 
@@ -56,6 +58,6 @@ Electrical data holds data related to transmission line elements, such as cable 
 
 | Subtab | Collection | Description| Relates to |
 |--------|------------|------------|------------|
-| Cable | Cable collection | Defines power cable characteristics| Tower arrangement collection | Candidate collection |
+| Cable | Cable collection | Defines power cable characteristics| Tower arrangement collection |
 | Tower | Tower collection | Defines transmission tower characteristics| Tower arrangement collection | Candidate collection |
 | Tower arrangement | Tower arrangement collection | Defines transmission lines characteristics | - |
