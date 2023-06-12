@@ -12,7 +12,7 @@ On this section will be shown an example application of PathFinder. It'll be a s
 
 We'd like the route to avoid crossing urban areas and forests, so those geometries will be added as spatial constraints. As we are very concerned about the environment, we'll make the reference cost of crossing it more expensive than the one of urban areas, and add a greater buffer as well. 
 
-<img src="./assets/gs_spac_const.png" alt="" /
+<img src="./assets/gs_spac_const.png" alt="" />
 
 
 Then, let's define our candidate by setting the two buses we want to connect, pointing to our desired spatial constraints and our slope map.
