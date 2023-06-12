@@ -1,9 +1,3 @@
----
-layout: default
-title: Execution Options
-nav_order: 5
----
-
 # Executions options
 
 PathFinder offers a few execution options that affect the routing or its post processing. The **Routing method** refers to the routing, and **Line enhancement** to the post process.

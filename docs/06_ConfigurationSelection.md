@@ -1,9 +1,3 @@
----
-layout: default
-title: Configuration Selection
-nav_order: 6
----
-
 # Tower arrangement selection
 
 Once the routing of a candidate is complete, PathFinder offers a feature module to create a basic budget and engineering for that power line. The result is based on a choice of a pre existing configuration from a database of options. This module has its own special elements to define the engineering possibilities, those are **Cables**, **Towers** and **Tower Arrangements**. A Tower Arrangement is defined by the choice of a Cable and a Tower. This combination will yield particular electrical parameters and constraints. PathFinder will choose the configuration of minimum loss considering an adequate power flow gap according to the candidate's electrical requirements.
