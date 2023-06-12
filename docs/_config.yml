@@ -2,7 +2,7 @@ title: "PSR docs template"
 remote_theme: psrenergy/just-the-docs
 logo: assets/images/psr_logo.png
 
-psr_model: "PathFinder"
+psr_model: "PSR docs"
 
 #adding zoom in images
 zoom_img_enabled: true
