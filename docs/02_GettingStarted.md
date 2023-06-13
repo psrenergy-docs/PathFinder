@@ -5,12 +5,25 @@ nav_order: 2
 
 # Getting started with PathFinder
 
-PathFinder uses Dijkstra based algorithms to optimize the route between two points, making it as shorter, cheaper and realistic as possible. Its user must become familiar with its four main entities: **Buses**, **Candidates**, **Spatial Constraints** and **Maps**. Thoose are the basic classes used to create geographical routes.
+On this section will be shown an example application of PathFinder. It'll be a simple example, more details about parameters and features are availble on the next sections. In this case, a single candidate will be created to connect two buses. The buses locations can be seen on the corner map, according to the coordinates at the data tab.
 
-On an energy transmission context, a bus is an electrical node where lines may connect and be operated. On the broader scope of PathFinder, **Buses** are simply locations of interest that we might want to connect. If Earth was an empty plane, that'd be pretty easy to accomplish. But in reality, there are several constraints to how a path can be routed, and it's interesting to avoid most thoublesome aeras as possible to yield short and cheap channels. On PathFinder, those constraints are classified between two categories: topological and area constraints.
+<img src="./assets/gs_buses.png" alt="" />
 
-**Spatial Constraints** aim to describe obstacles better represented as bidimentional polygons, such as lakes, forests or cities. Each Spatial Constraint indicates an area that the user would like to avoid crossing on its routing to a certain degree. PathFinder represents that avoindance will as financial loss, in other words, once the user communicates how much more expensive is the crossing of an area per distance unit, the model will decide if it is worth it to do so and how. The user will input those geometries as ESRI Shapefiles.
+We'd like the route to avoid crossing urban areas and forests, so those geometries will be added as spatial constraints. As we are very concerned about the environment, we'll make the reference cost of crossing it more expensive than the one of urban areas, and add a greater buffer as well. 
 
-Meanwhile, **Maps** are used to represent topological constraints, such as mountains and hills. They describe the 3D terrain where the routing occurs, allowing the model to acquire a more realistic concept of distance and space. The main Map used is a georeferenced TIFF **declivity** file.
+<img src="./assets/gs_spac_const.png" alt="" />
 
-Finally, a **Candidate** is defined by a pair of **Buses**, linked to a set of **Spatial Constraints** and a declivity **Map**. With this set of data, PathFinder can optimize a route to connect both locations while considering the given spatial and geometrical constraints. Since the routing will occur over the area the **Map**, it's very important that both buses are cointained in it and that there're no missing data that makes it impossible to connect them.
+
+Then, let's define our candidate by setting the two buses we want to connect, pointing to our desired spatial constraints and our slope map.
+
+<img src="./assets/gs_cand.png" alt="" />
+
+Now, we can already generate a route by pressing "Run PathFinder" on the "Run" tab.
+
+<img src="./assets/gs_run.png" alt="" />
+
+The result will be available on "routes/optroute/candidate_1/optroute.shp", let's check it out.
+
+<img src="./assets/gs_route.png" alt="" />
+
+Looks good! The route considers the terrain and avoids the constrained areas.
