@@ -1,3 +1,9 @@
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 # Executions options
 
 PathFinder offers a few execution options that affect the routing or its post processing. The **Routing method** refers to the routing, and **Line enhancement** to the post process.

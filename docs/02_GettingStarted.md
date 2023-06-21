@@ -1,8 +1,13 @@
 ---
-layout: default
 title: Getting Started
 nav_order: 2
 ---
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 # Getting started with PathFinder
 

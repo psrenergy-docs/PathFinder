@@ -1,4 +1,15 @@
-# Element Parameters
+---
+title: Collection parameters
+nav_order: 4
+---
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+# Collection Parameters
 
 In this section the parameters of each PathFinder element (Buses, Maps, Spatial Constraints) will be detailed. It is important to understand each one of them to be able to yield and tune reasonable results.
 
