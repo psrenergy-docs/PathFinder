@@ -1,6 +1,6 @@
 ---
 title: Tower configuration
-nav_order: 5
+nav_order: 6
 ---
 
 ## Table of contents
