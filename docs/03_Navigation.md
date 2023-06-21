@@ -17,6 +17,7 @@ This section presents information related to PathFinder's interface, explaining 
 ### Opening a case
 A PathFinder case is opened informing its folder to the interface. After opening the software, a window will be displayed for the insertion of the case directory.
 
+<img src="./assets/inform_case.png" alt="" />
 
 After inserting the case directory, click open to load the case data. If the folder informed does not contain any data related to the software, the interface will ask if an empty case should be created from scratch.
 
@@ -24,13 +25,31 @@ After inserting the case directory, click open to load the case data. If the fol
 
 The PathFinder tabs have standard layouts, allowing quick learning on the study configuration workflow.
 
+<img src="./assets/layout_overview_v2.png" alt="" />
+
+The interface can be divided into sections, each one containing a group of controls and/or data for configuration.
+
+1. Basic data registry where it can be visualized and configured
+2. Menu containing data options such as filters, datasheet interface, layout configuration and data adding and removing controls
+3. Window that lists subsections that can be enabled or disabled for visualization
+4. Attribute configuration section for attributes that require association with other collections
+5. Treeview of the interface tabs
+
 #### Adding and removing elements
 
-#### Associating elements
+Elements can be added or deleted from the case in ```2``` in the ```registry``` area.
 
 #### Exporting and importing data to Excel
 
+PathFinder allows importing and exporting data to datasheets. It can be done in ```2``` in ```Get & transform data``` area.
+
+#### Associating elements
+
+Some attributes are used to link collections, e.g. the ```candidate``` collection which requires association to ```spatial constraint``` and ```map``` data. These can be configured in ```4```.
+
 #### Running PathFinder
+
+The model can be executed in the ```Run``` tab presented in ```2```. 
 
 ### PathFinder tabs
 

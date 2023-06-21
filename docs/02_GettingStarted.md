@@ -3,6 +3,12 @@ title: Getting Started
 nav_order: 2
 ---
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
 # Getting started with PathFinder
 
 On this section will be shown an example application of PathFinder. It'll be a simple example, more details about parameters and features are availble on the next sections. In this case, a single candidate will be created to connect two buses. The buses locations can be seen on the corner map, according to the coordinates at the data tab.
